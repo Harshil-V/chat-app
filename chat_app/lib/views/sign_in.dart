@@ -10,10 +10,22 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     appBar: PreferredSize(
-        preferredSize: Size.fromHeight(70.0), // here the desired height
-        child: appBarMain(context)
-     )
+     appBar:appBarMain(context),
+     body: Container(
+       padding: EdgeInsets.symmetric(horizontal: 20),
+       child: Column(children:[
+         TextField(autocorrect: true,
+         decoration: InputDecoration(
+           hintText: "Enter Email"
+           ),
+         ),
+         TextField(autocorrect: true,
+         decoration: InputDecoration(
+           hintText: "Enter Password"
+           ),
+         )
+       ],),
+     ),
     );
   }
 }

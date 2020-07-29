@@ -15,14 +15,10 @@ class _SignInState extends State<SignIn> {
        padding: EdgeInsets.symmetric(horizontal: 20),
        child: Column(children:[
          TextField(autocorrect: true,
-         decoration: InputDecoration(
-           hintText: "Enter Email"
+         decoration: textFieldInputDecorations("Enter Email"),
            ),
-         ),
          TextField(autocorrect: true,
-         decoration: InputDecoration(
-           hintText: "Enter Password"
-           ),
+         decoration: textFieldInputDecorations("Enter Password"),
          )
        ],),
      ),

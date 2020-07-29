@@ -5,7 +5,7 @@ Widget appBarMain(BuildContext context) {
     centerTitle: true,
     title: Text("Chat App"),
     shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(bottom: Radius.circular(50))),
+        borderRadius: BorderRadius.vertical(bottom: Radius.circular(35))),
   );
 } //widget
 

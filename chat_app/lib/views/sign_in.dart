@@ -19,6 +19,30 @@ class _SignInState extends State<SignIn> {
            ),
          TextField(autocorrect: true,
          decoration: textFieldInputDecorations("Enter Password"),
+         ),
+         SizedBox(height: 8,),
+         Container(
+           alignment: Alignment.centerRight,
+           child: Container(
+             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+             child: Text("Forgot Password?"),
+            ),
+         ),
+         SizedBox(height: 8,),
+         Container(
+          
+           alignment: Alignment.center,
+           width: MediaQuery.of(context).size.width,
+           padding: EdgeInsets.symmetric(vertical: 18),
+           decoration: BoxDecoration(
+             borderRadius:BorderRadius.circular(30),
+             color: Colors.deepPurple,
+           ),
+           child: Text("Sign In", style: TextStyle(
+             color: Colors.white,
+             fontSize: 16
+           ),
+           ),
          )
        ],),
      ),

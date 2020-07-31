@@ -12,3 +12,10 @@ Widget appBarMain(BuildContext context) {
 InputDecoration textFieldInputDecorations(String hintText) {
   return InputDecoration(hintText: hintText);
 } //textFieldInputDecorations
+
+TextStyle mediumTextStyle() {
+  return TextStyle(
+    color: Colors.black,
+    fontSize: 15
+  );
+} //mediumTextStyle
